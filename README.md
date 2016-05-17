@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## React App Boilerplate
 
 Start developing React JS applications easily with the included tooling. Using gulp with browserify and jasmine for testing.
@@ -50,3 +51,7 @@ The boilerplate is minimalistic, meaning you have to expand on the current workf
 * **styles/**: Where you put your css files
 * **specs/**: Where you put your test files
 * **gulpfile**: Gulp configuration
+=======
+# weather-app
+A basic ReactJS app that displays the wether for a given location
+>>>>>>> b1c40ced7dd1f375d0f38b2c2ed9f0018dbda6b6
