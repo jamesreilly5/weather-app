@@ -5,9 +5,9 @@ var TestUtils = require('react-addons-test-utils');
 
 describe("App", function() {
 
-  it("should render text: Hello world!", function() {
-    var app = TestUtils.renderIntoDocument(React.createElement(App));
-    expect(ReactDOM.findDOMNode(app).textContent).toEqual('Hello world!');
-  });
+    it("renders the text 'The response it not here yet!'", function() {
+        var app = TestUtils.renderIntoDocument(React.createElement(App));
+        expect(ReactDOM.findDOMNode(app).textContent).toEqual('The response it not here yet!');
+    });
 
 });
