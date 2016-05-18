@@ -16,4 +16,4 @@ Go to `localhost:8889/testrunner.html` to see your tests
 
 ### Known issues / design issues
 * I realised the API actually displays the weather for 3 hour intervals towards the end. The app only displays the first 5 entries. I initially thought each entry represented the weather for 1 day so I'll have to fix up how I summarise this data.
-* The index isn't being overwritten correctly from `gulp deplo` in the dist folder so font awesome and bootstrap didn't get copied correctly. I hard coded in the value for now due to time constraints.
+* The index.html isn't being overwritten correctly running `gulp deploy` in the dist folder so font awesome and bootstrap didn't get copied correctly. I hard coded in the value for now due to time constraints (in case the assessor doesn't have npm/gulp set up correctly).
