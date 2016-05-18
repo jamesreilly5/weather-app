@@ -5,14 +5,18 @@ var parseDay = function(dayForecast, index) {
         temp: dayForecast.main.temp,
         maxTemp: dayForecast.main.temp_max,
         minTemp: dayForecast.main.temp_min,
-        weather: dayForecast.weather[0].description
+        weather: dayForecast.weather[0].description,
+        date: new Date(Date.parse(dayForecast.dt_txt))
     };
 }
 
 module.exports = {
     parse: function(data) {
         json = JSON.parse(data),
-        model = { days: [] };
+        model = {
+            city: json.city.name,
+            days: []
+        };
 
         // Current requested functionality is 5 days so don't parse the rest
         for(var i=0; i<5; i++) {
