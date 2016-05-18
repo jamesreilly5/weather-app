@@ -2,6 +2,7 @@ var React = require('react');
 var api = require('./ApiClient');
 var JsonParser = require('./JsonParser');
 var ForecastList = require('./components/ForecastList');
+var TodaysForecast = require('./components/TodaysForecast');
 
 var API_ENDPOINT = 'http://api.openweathermap.org/data/2.5/forecast',
 	// In a proper deployment situation these credentials would be pulled down
@@ -34,9 +35,13 @@ var App = React.createClass({
 		if ( !this.state.response ) {
 			return <div>The response it not here yet!</div>
 		}
-		var weatherData = this.state.response.days;
+		var weatherData = this.state.response.days,
+			todaysData = weatherData.shift();
 		return (
 			<div>
+				<TodaysForecast key={todaysData.id} temp={todaysData.temp}
+					minTemp={todaysData.minTemp} maxTemp={todaysData.maxTemp}
+					weather={todaysData.weather} city={this.state.response.city} />
 				<ForecastList data={weatherData}/>
 			</div>
 		)

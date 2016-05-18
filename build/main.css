@@ -4,15 +4,30 @@ body {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 }
 
 h2 {
 	font-size: 1.5em;
 }
 
+.title {
+	font-size: 5em;
+	margin-left: 0.1em;
+}
+
 .day-forecast {
 	background-color: #2672EC;
 	padding: 1em;
-	margin: 1em 1em;
+	margin: 1em 0;
+}
+
+.forecast-list {
+	margin: 1em;
+}
+
+.todays-forecast {
+	background-color: #00C13F;
+	padding: 1em;
+	margin: 1em;
 }
