@@ -4,14 +4,14 @@ var DayForecast = require('./DayForecast');
 var ForecastList = React.createClass({
     render: function() {
         return (
-            <ul className="forecast-list">
+            <div className="forecast-list row">
                 {
                     this.props.data.map(function(forecast) {
                         return <DayForecast key={forecast.id} temp={forecast.temp}
                             minTemp={forecast.minTemp} maxTemp={forecast.maxTemp} weather={forecast.weather} />
                     })
                 }
-            </ul>
+            </div>
         )
     }
 });

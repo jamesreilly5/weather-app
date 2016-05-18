@@ -3,7 +3,7 @@ var React = require('react');
 var DayForecast = React.createClass({
 	render: function() {
 		return (
-            <div className="day-forecast">
+            <div className="day-forecast col-md-2 col-xs-6">
                 <div>Weather: { this.props.weather ? this.props.weather : '?' }</div>
 			    <div>Temp: { this.props.temp ? this.props.temp : '-' }</div>
                 <div>Min: { this.props.minTemp ? this.props.minTemp : '-' }</div>
