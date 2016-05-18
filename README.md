@@ -8,7 +8,7 @@ A basic ReactJS app that displays the weather for a given location for a technic
 
 - Run `NODE_ENV=development gulp`
 - Go to `localhost:8889` to display the app
-* 
+
 **Run tests in browser**
 
 Go to `localhost:8889/testrunner.html` to see your tests
