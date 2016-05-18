@@ -1,6 +1,8 @@
 # weather-app
 A basic ReactJS app that displays the weather for a given location for a technical test. Details of the test can be found [here](https://github.com/jamesreilly5/weather-app/blob/master/PROBLEM.md). To view the compiled assets without running `gulp` go to the `dist` folder and open index.html 
 
+![Alt text](/screenshot.png?raw=true "Weather App")
+
 ### Development
 **Running the app**
 - Run `NODE_ENV=development gulp`
