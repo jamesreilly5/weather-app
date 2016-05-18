@@ -3,6 +3,10 @@ A basic ReactJS app that displays the weather for a given location for a technic
 
 ![Alt text](/screenshot.png?raw=true "Weather App")
 
+### Dependencies
+* Node/npm
+* Gulp
+
 ### Development
 **Running the app**
 
