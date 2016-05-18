@@ -1,7 +1,18 @@
 body {
-	background-color: #EAEAEA;
+	background-color: #643EBF;
+	color: white;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
 }
 
 .day-forecast {
-	margin: 1em 0;
+	background-color: #2672EC;
+	padding: 1em;
+	margin: 1em 1em;
 }

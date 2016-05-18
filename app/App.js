@@ -20,7 +20,7 @@ var App = React.createClass({
 		var self = this;
 		this.setState({response: undefined});
 		api.retrieveWeatherData(
-			`${API_ENDPOINT}?q=${LOCATION},us&mode=json&appid=${API_KEY}`,
+			`${API_ENDPOINT}?q=${LOCATION},us&units=metric&mode=json&appid=${API_KEY}`,
 			null,
 			function(data) {
 				self.setState({

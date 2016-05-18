@@ -32,6 +32,8 @@
     "react-addons-test-utils": "^15.0.2",
     "react-bootstrap": "^0.29.4",
     "react-dom": "^15.0.2",
+    "react-font-awesome": "^1.0.3",
+    "react-fontawesome": "^1.1.0",
     "superagent": "^1.8.3"
   }
 }

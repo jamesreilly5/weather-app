@@ -5,9 +5,13 @@ var parseDay = function(dayForecast, index) {
         temp: dayForecast.main.temp,
         maxTemp: dayForecast.main.temp_max,
         minTemp: dayForecast.main.temp_min,
-        weather: dayForecast.weather[0].description,
+        weather: weatherMap[dayForecast.weather[0].description],
         date: new Date(Date.parse(dayForecast.dt_txt))
     };
+};
+
+var weatherMap = {
+    'clear sky' : 'sun-o'
 }
 
 module.exports = {
