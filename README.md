@@ -1,20 +1,17 @@
 # weather-app
-A basic ReactJS app that displays the wether for a given location
+A basic ReactJS app that displays the weather for a given location. To view the compiled assets without running `gulp` go to the `dist` folder and open index.html 
 
 ### Development
-* Run `NODE_ENV=development gulp`
-* Go to `localhost:8889` to display the app
-* Go to `localhost:8889/testrunner.html` to see your tests
-* Any changes to `app` or `styles` folder will automatically rebuild to `build` folder
-* Both tests and application changes will refresh automatically in the browser
-* Run `gulp test` to run all tests with phantomJS and produce XML reports
+**Running the app**
+- Run `NODE_ENV=development gulp`
+- Go to `localhost:8889` to display the app
+* 
+** Run tests in browser **
+Go to `localhost:8889/testrunner.html` to see your tests
 
 ### Minify the code, ready for production
 * Run `NODE_ENV=production gulp deploy`
 
-### Directory
-* **build/**: Where your automatically builds to. This is where you launch your app in development
-* **dist/**: Where the deployed code exists, ready for production
-* **styles/**: Where you put your css files
-* **specs/**: Where you put your test files
-* **gulpfile**: Gulp configuration
+### Known issues / design issues
+* I realised the API actually displays the weather for 3 hour intervals towards the end. The app only displays the first 5 entries. I initially thought each entry represented the weather for 1 day so I'll have to fix up how I summarise this data.
+* The JsonParser is doing too much and dirtying up the model with values that only the app cares about. This should be extracted to a utility module
