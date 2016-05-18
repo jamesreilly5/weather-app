@@ -16,11 +16,11 @@ describe("ApiClient", function() {
         var expectedOutput = {
             city: 'Dublin',
             days: [
-                { id: 0, temp: '1.1', maxTemp: '1.2', minTemp: '1', weather: 'sun-o', date: new Date(2016, 4, 18) },
-                { id: 1, temp: '2.1', maxTemp: '2.2', minTemp: '2', weather: 'sun-o', date: new Date(2016, 4, 19) },
-                { id: 2, temp: '3.1', maxTemp: '3.2', minTemp: '3', weather: 'sun-o', date: new Date(2016, 4, 20) },
-                { id: 3, temp: '4.1', maxTemp: '4.2', minTemp: '4', weather: 'sun-o', date: new Date(2016, 4, 21) },
-                { id: 4, temp: '5.1', maxTemp: '5.2', minTemp: '5', weather: 'sun-o', date: new Date(2016, 4, 22) }
+                { id: 0, temp: '1.1', maxTemp: '1.2', minTemp: '1', weather: 'sun-o', date: 'Thursday' },
+                { id: 1, temp: '2.1', maxTemp: '2.2', minTemp: '2', weather: 'sun-o', date: 'Friday' },
+                { id: 2, temp: '3.1', maxTemp: '3.2', minTemp: '3', weather: 'sun-o', date: 'Saturday' },
+                { id: 3, temp: '4.1', maxTemp: '4.2', minTemp: '4', weather: 'sun-o', date: 'Sunday' },
+                { id: 4, temp: '5.1', maxTemp: '5.2', minTemp: '5', weather: 'sun-o', date: 'Monday' }
             ]
         };
 

@@ -8,7 +8,8 @@ var ForecastList = React.createClass({
                 {
                     this.props.data.map(function(forecast) {
                         return <DayForecast className="row" key={forecast.id} temp={forecast.temp}
-                            minTemp={forecast.minTemp} maxTemp={forecast.maxTemp} weather={forecast.weather} />
+                            minTemp={forecast.minTemp} maxTemp={forecast.maxTemp} weather={forecast.weather}
+                            day={forecast.date} />
                     })
                 }
             </div>
